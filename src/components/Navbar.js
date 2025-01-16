@@ -2,14 +2,23 @@ import React from 'react';
 
 function Navbar() {
   return (
-    <nav style={{ padding: '10px', backgroundColor: '#f8f9fa' }}>
-      <ul style={{ listStyle: 'none', display: 'flex', justifyContent: 'space-around' }}>
-        <li><a href="#home">Home</a></li>
-        <li><a href="#about">About Me</a></li>
-        <li><a href="#projects">Projects</a></li>
-        <li><a href="#blog">Blog</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </ul>
+    <nav className="bg-gray-800 text-white p-4 fixed w-full top-0 shadow-md z-10">
+      <div className="container mx-auto flex justify-between items-center">
+        <a href="#about" className="text-2xl font-bold hover:text-blue-400">
+          My Portfolio
+        </a>
+        <div className="space-x-4">
+          <a href="#about" className="hover:text-blue-400">
+            About
+          </a>
+          <a href="#projects" className="hover:text-blue-400">
+            Projects
+          </a>
+          <a href="#contact" className="hover:text-blue-400">
+            Contact
+          </a>
+        </div>
+      </div>
     </nav>
   );
 }
