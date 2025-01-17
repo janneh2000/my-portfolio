@@ -1,22 +1,39 @@
 import React from 'react';
 
 function Projects() {
+  const projects = [
+    {
+      title: "Banco BV Automation",
+      description:
+        "Developed Python scripts to automate processes and utilized Google Cloud to implement scalable solutions, reducing operational inefficiencies by 40%.",
+    },
+    {
+      title: "Foxconn Kubernetes Deployment",
+      description:
+        "Deployed Kubernetes clusters to streamline application management and developed Python scripts to optimize workflows, enhancing system reliability.",
+    },
+  ];
+
   return (
-    <section id="projects" style={{ padding: '20px', backgroundColor: '#f1f1f1' }}>
-      <h2 style={{ textAlign: 'center', marginBottom: '20px' }}>Projects</h2>
-      <div style={{ marginBottom: '20px' }}>
-        <h3>Banco BV Automation</h3>
-        <p>
-          Developed Python scripts to automate processes and utilized Google Cloud to implement scalable solutions,
-          reducing operational inefficiencies by 40%.
-        </p>
-      </div>
-      <div style={{ marginBottom: '20px' }}>
-        <h3>Foxconn Kubernetes Deployment</h3>
-        <p>
-          Deployed Kubernetes clusters to streamline application management and developed Python scripts to optimize workflows,
-          enhancing system reliability.
-        </p>
+    <section
+      id="projects"
+      className="bg-white py-12 px-6 md:px-12"
+    >
+      <div className="max-w-5xl mx-auto text-center">
+        <h2 className="text-4xl font-bold text-gray-800 mb-6">Projects</h2>
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+          {projects.map((project, index) => (
+            <div
+              key={index}
+              className="bg-gray-100 rounded-lg shadow-md p-6 hover:shadow-lg transition-shadow duration-300"
+            >
+              <h3 className="text-2xl font-semibold text-gray-700 mb-2">
+                {project.title}
+              </h3>
+              <p className="text-gray-600">{project.description}</p>
+            </div>
+          ))}
+        </div>
       </div>
     </section>
   );
