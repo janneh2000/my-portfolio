@@ -7,7 +7,7 @@ function Footer() {
         © {new Date().getFullYear()} My Portfolio. Built with <span className="font-semibold">React</span> and <span className="font-semibold">Tailwind CSS</span>.
       </p>
       <p className="text-sm">
-        Made with ❤️ by <span className="font-semibold">Alie Janneh</span>.
+        Made by <span className="font-semibold">Alie Janneh</span>.
       </p>
     </footer>
   );
