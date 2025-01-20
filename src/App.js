@@ -3,8 +3,9 @@ import Navbar from './components/Navbar';
 import AboutMe from './components/AboutMe';
 import Projects from './components/Projects';
 import Contact from './components/Contact';
-import Footer from './components/Footer';
 import Certifications from './components/Certifications';
+import Footer from './components/Footer';
+
 function App() {
   return (
     <div className="pt-16">
@@ -12,8 +13,10 @@ function App() {
       <AboutMe />
       <Projects />
       <Contact />
-      <Footer />
       <Certifications />
+      <Footer />
+
+      
     </div>
   );
 }
