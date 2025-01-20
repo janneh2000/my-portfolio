@@ -2,8 +2,8 @@ import React from 'react';
 import Navbar from './components/Navbar';
 import AboutMe from './components/AboutMe';
 import Projects from './components/Projects';
-import Contact from './components/Contact';
 import Certifications from './components/Certifications';
+import Contact from './components/Contact';
 import Footer from './components/Footer';
 
 function App() {
@@ -12,8 +12,8 @@ function App() {
       <Navbar />
       <AboutMe />
       <Projects />
-      <Contact />
       <Certifications />
+      <Contact />
       <Footer />
 
       
