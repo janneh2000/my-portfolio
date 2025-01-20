@@ -3,6 +3,11 @@ import React from 'react';
 function Certifications() {
   const certifications = [
     {
+      title: "Google Cloud Professional Cloud Architect",
+      issuer: "Google Cloud",
+      date: "Ongoing",
+    },
+    {
       title: "AWS Certified Solutions Architect – Associate",
       issuer: "Amazon Web Services",
       date: "Issued May 2022",
