@@ -1,46 +1,59 @@
 import React from 'react';
 
-function Contact() {
+export default function Contact() {
   return (
-    <section id="contact" className="bg-gray-100 py-12 px-6 md:px-12 text-center">
-      <div className="max-w-4xl mx-auto">
-        <h2 className="text-4xl font-bold text-gray-800 mb-6">Contact Me</h2>
-        <p className="text-lg text-gray-600 mb-8">
-          I’m open to opportunities and collaborations! Feel free to reach out to me via email, LinkedIn, phone, or explore my GitHub to view my projects.
+    <section id="contact" style={{ padding: '100px 60px', background: 'var(--bg)' }}>
+      <div style={{ maxWidth: 700, textAlign: 'center', margin: '0 auto' }}>
+        <div style={{ fontFamily: 'var(--mono)', fontSize: 11, color: 'var(--mint)', letterSpacing: '0.2em', textTransform: 'uppercase', marginBottom: 16, justifyContent: 'center', display: 'flex', alignItems: 'center', gap: 10 }}>
+          Contact
+        </div>
+        <h2 style={{ fontFamily: 'var(--display)', fontWeight: 800, fontSize: 'clamp(32px, 4vw, 54px)', lineHeight: 1.05, letterSpacing: '-0.02em', marginBottom: 24 }}>
+          Let's build <br />something real.
+        </h2>
+        <p style={{ fontSize: 17, color: 'var(--muted2)', lineHeight: 1.75, marginBottom: 48 }}>
+          I'm actively looking for DevOps and Cloud Engineer roles — remote or on-site in
+          the US, UK, Portugal, or Malta. If you're building something ambitious, let's talk.
         </p>
-        <div className="space-y-4 md:space-y-0 md:flex md:space-x-8 justify-center">
-          <a
-            href="mailto:cjanneh@gmail.com"
-            className="bg-blue-500 text-white px-6 py-3 rounded-lg font-medium hover:bg-blue-600 transition-colors duration-300"
-          >
-            Email Me
-          </a>
-          <a
-            href="https://www.linkedin.com/in/alie-janneh/"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="bg-gray-700 text-white px-6 py-3 rounded-lg font-medium hover:bg-gray-800 transition-colors duration-300"
-          >
-            LinkedIn
-          </a>
-          <a
-            href="tel:+5511987071493"
-            className="bg-green-500 text-white px-6 py-3 rounded-lg font-medium hover:bg-green-600 transition-colors duration-300"
-          >
-            Call Me
-          </a>
-          <a
-            href="https://github.com/janneh2000"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="bg-black text-white px-6 py-3 rounded-lg font-medium hover:bg-gray-900 transition-colors duration-300"
-          >
-            View GitHub
-          </a>
+
+        <div style={{ display: 'flex', justifyContent: 'center', gap: 16, flexWrap: 'wrap', marginBottom: 48 }}>
+          {[
+            { href: 'https://www.linkedin.com/in/alie-janneh/', label: 'LinkedIn',  icon: 'in' },
+            { href: 'https://github.com/janneh2000',            label: 'GitHub',    icon: '⌥' },
+            { href: 'https://x.com/cjanneh2000',               label: 'Twitter/X', icon: '𝕏' },
+          ].map(link => (
+            <ContactLink key={link.label} {...link} />
+          ))}
+        </div>
+
+        <div style={{ fontFamily: 'var(--mono)', fontSize: 18, color: 'var(--text)', letterSpacing: '0.04em' }}>
+          cjanneh@gmail.com
         </div>
       </div>
     </section>
   );
 }
 
-export default Contact;
+function ContactLink({ href, label, icon }) {
+  const [hovered, setHovered] = React.useState(false);
+  return (
+    <a
+      href={href}
+      target="_blank"
+      rel="noreferrer"
+      onMouseEnter={() => setHovered(true)}
+      onMouseLeave={() => setHovered(false)}
+      style={{
+        display: 'flex', alignItems: 'center', gap: 8,
+        padding: '12px 22px',
+        border: `1px solid ${hovered ? 'var(--mint)' : 'var(--border)'}`,
+        borderRadius: 6,
+        fontFamily: 'var(--mono)', fontSize: 12,
+        color: hovered ? 'var(--mint)' : 'var(--muted2)',
+        textDecoration: 'none', transition: 'all 0.2s',
+        letterSpacing: '0.06em',
+        background: hovered ? 'var(--mint-glow2)' : 'transparent',
+      }}>
+      <span>{icon}</span> {label}
+    </a>
+  );
+}
