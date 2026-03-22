@@ -13,7 +13,7 @@ export default function Skills() {
   return (
     <section id="skills" style={{ padding: '100px 60px', background: 'var(--bg)' }}>
       <div style={{ fontFamily: 'var(--mono)', fontSize: 11, color: 'var(--mint)', letterSpacing: '0.2em', textTransform: 'uppercase', marginBottom: 16, display: 'flex', alignItems: 'center', gap: 10 }}>
-        <span style={{ color: 'var(--muted)' }}>{'// '}</span> Technical Stack
+         {'// '} {'// '} Technical Stack
       </div>
       <h2 style={{ fontFamily: 'var(--display)', fontWeight: 800, fontSize: 'clamp(32px, 4vw, 54px)', lineHeight: 1.05, letterSpacing: '-0.02em', marginBottom: 60 }}>
         Tools I build <br />production with.

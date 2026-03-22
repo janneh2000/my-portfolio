@@ -13,7 +13,7 @@ export default function Certifications() {
   return (
     <section id="certs" style={{ padding: '100px 60px', background: 'var(--bg2)' }}>
       <div style={{ fontFamily: 'var(--mono)', fontSize: 11, color: 'var(--mint)', letterSpacing: '0.2em', textTransform: 'uppercase', marginBottom: 16, display: 'flex', alignItems: 'center', gap: 10 }}>
-        <span style={{ color: 'var(--muted)' }}>{'// '}</span> Certifications
+         {'// '} {'// '} Certifications
       </div>
       <h2 style={{ fontFamily: 'var(--display)', fontWeight: 800, fontSize: 'clamp(32px, 4vw, 54px)', lineHeight: 1.05, letterSpacing: '-0.02em', marginBottom: 60 }}>
         Credentials <br />that back it up.
