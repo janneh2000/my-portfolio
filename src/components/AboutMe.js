@@ -13,20 +13,20 @@ export default function AboutMe() {
       <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 80, alignItems: 'start' }}>
         {/* Left: bio */}
         <div style={{ fontSize: 16, color: 'var(--muted2)', lineHeight: 1.8 }}>
-          <p>I'm <strong style={{ color: 'var(--text)' }}>Alie Janneh</strong>, co-founder of <strong style={{ color: 'var(--text)' }}>ARGUS</strong> — a security and intelligence platform for the Web3 / Solana ecosystem — and a Cloud &amp; DevOps Engineer with <strong style={{ color: 'var(--text)' }}>8+ years</strong> shipping multi-cloud infrastructure that holds up in production.</p>
-          <p style={{ marginTop: 20 }}>At ARGUS, Antonio and I are shipping four products in parallel: <strong style={{ color: 'var(--text)' }}>Protocol Guardian</strong>, <strong style={{ color: 'var(--text)' }}>SolGuard</strong>, <strong style={{ color: 'var(--text)' }}>Mosaic</strong>, and an <strong style={{ color: 'var(--text)' }}>AI Venture Studio</strong>. It's the kind of build velocity I always wanted to operate at, applied to a problem space — Web3 security &amp; on-chain intel — that's both early and consequential.</p>
+          <p>I'm <strong style={{ color: 'var(--text)' }}>Alie Janneh</strong>, founder of <strong style={{ color: 'var(--text)' }}>ARGUS</strong> — a security and intelligence platform for Web3 — and a Cloud &amp; DevOps Engineer with <strong style={{ color: 'var(--text)' }}>8+ years</strong> shipping multi-cloud infrastructure that holds up in production.</p>
+          <p style={{ marginTop: 20 }}>At ARGUS I'm shipping four products in parallel: <strong style={{ color: 'var(--text)' }}>Protocol Guardian</strong> (Ethereum), <strong style={{ color: 'var(--text)' }}>SolGuard</strong> (Solana), <strong style={{ color: 'var(--text)' }}>Mosaic</strong>, and an <strong style={{ color: 'var(--text)' }}>AI Venture Studio</strong>. It's the build velocity I always wanted to operate at, applied to a problem space — Web3 security &amp; on-chain intelligence — that's both early and consequential.</p>
           <p style={{ marginTop: 20 }}>Before ARGUS, I ran cloud infrastructure on <strong style={{ color: 'var(--text)' }}>GCP, AWS, and OCI</strong> at <strong style={{ color: 'var(--text)' }}>Banco BV</strong> and <strong style={{ color: 'var(--text)' }}>Foxconn</strong> — automating with Python and Terraform, orchestrating on Kubernetes, and shipping pipelines that don't break at 2am.</p>
-          <p style={{ marginTop: 20 }}>Based in São Paulo. Open to senior <strong style={{ color: 'var(--text)' }}>SRE / Cloud / Customer Engineer</strong> roles at companies serious about reliability — Google São Paulo first on the list.</p>
+          <p style={{ marginTop: 20 }}>Based in São Paulo. Open to senior <strong style={{ color: 'var(--text)' }}>Cloud / Customer Engineer / Platform</strong> roles — Google São Paulo first on the list.</p>
         </div>
 
         {/* Right: info cards */}
         <div style={{ display: 'flex', flexDirection: 'column', gap: 24 }}>
           {[
-            { icon: '🏢', label: 'Currently', val: 'Co-Founder @ ARGUS' },
+            { icon: '🏢', label: 'Currently', val: 'Founder @ ARGUS' },
             { icon: '📍', label: 'Location', val: 'São Paulo, Brazil' },
             { icon: '🌐', label: 'Languages', val: 'Portuguese (native) · English (fluent)' },
             { icon: '🎓', label: 'Top Certification', val: 'Google Cloud Professional Cloud Architect' },
-            { icon: '📡', label: 'Focus Areas', val: 'Web3 Security · Cloud · SRE · AI' },
+            { icon: '📡', label: 'Focus Areas', val: 'Web3 Security · Cloud · DevOps · AI' },
           ].map(item => (
             <div key={item.label} style={{
               display: 'flex', alignItems: 'center', gap: 14,

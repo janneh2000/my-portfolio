@@ -4,7 +4,7 @@ const skillGroups = [
   { icon: '☁️', title: 'Cloud Platforms',           tags: ['GCP', 'AWS', 'OCI', 'Cloud Run', 'GKE', 'EKS', 'Cloud Functions', 'BigQuery'] },
   { icon: '⚙️', title: 'Infrastructure as Code',    tags: ['Terraform', 'Helm', 'Ansible', 'Pulumi', 'CloudFormation'] },
   { icon: '🐳', title: 'Containers & Orchestration', tags: ['Kubernetes', 'Docker', 'Docker Compose', 'ArgoCD', 'Istio'] },
-  { icon: '📊', title: 'Observability & SRE',        tags: ['Prometheus', 'Grafana', 'Loki', 'Alertmanager', 'Cloud Monitoring', 'SLO/SLI'] },
+  { icon: '📊', title: 'Observability',              tags: ['Prometheus', 'Grafana', 'Loki', 'Alertmanager', 'Cloud Monitoring'] },
   { icon: '🔁', title: 'CI/CD & Version Control',   tags: ['GitHub Actions', 'GitLab CI', 'Cloud Build', 'Jenkins', 'Git', 'ArgoCD'] },
   { icon: '🐍', title: 'Languages & Data',           tags: ['Python', 'TypeScript', 'Bash', 'SQL', 'BigQuery', 'Rust', 'JavaScript'] },
 ];
@@ -33,7 +33,7 @@ export default function Skills() {
           <div style={{ fontSize: 28, marginBottom: 16 }}>⛓️</div>
           <div style={{ fontFamily: 'var(--mono)', fontSize: 13, color: 'var(--mint)', letterSpacing: '0.08em', marginBottom: 16 }}>Web3 &amp; Blockchain Infrastructure</div>
           <div style={{ display: 'flex', flexWrap: 'wrap', gap: 6 }}>
-            {['Solana', 'Anchor Framework', 'Drift Protocol', 'Helius RPC', 'DeFi Infrastructure', 'SPL Tokens', 'On-chain Programs', 'Polymarket', 'Polygon'].map(tag => (
+            {['Ethereum', 'EVM', 'Solidity', 'Foundry', 'Solana', 'Anchor', 'SPL Tokens', 'Helius RPC', 'DeFi Infrastructure', 'On-chain Intelligence'].map(tag => (
               <Tag key={tag}>{tag}</Tag>
             ))}
           </div>

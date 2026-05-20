@@ -11,7 +11,7 @@ export default function Contact() {
           Let's build <br />something real.
         </h2>
         <p style={{ fontSize: 17, color: 'var(--muted2)', lineHeight: 1.75, marginBottom: 48 }}>
-          Actively pursuing SRE / Cloud Engineer roles — São Paulo (Google &amp; tier-one tech),
+          Actively pursuing Cloud / Customer / Platform Engineer roles — São Paulo (Google &amp; tier-one tech),
           remote-first globally, and select on-site teams in the US, UK, and Portugal.
           If you're building something ambitious, let's talk.
         </p>

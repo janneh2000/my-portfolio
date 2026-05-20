@@ -34,7 +34,7 @@ export default function Hero() {
         marginBottom: 24, display: 'flex', alignItems: 'center', gap: 12,
       }}>
         <span style={{ width: 32, height: 1, background: 'var(--mint)', display: 'inline-block' }} />
-        Co-Founder, ARGUS · Cloud · Solana · AI
+        Founder, ARGUS · Cloud · Web3 · AI
       </div>
 
       {/* Name */}
@@ -51,17 +51,17 @@ export default function Hero() {
         fontFamily: 'var(--display)', fontWeight: 700,
         fontSize: 'clamp(20px, 3vw, 38px)', color: 'var(--muted)', marginBottom: 36,
       }}>
-        Co-Founder @ ARGUS · Cloud &amp; DevOps Engineer
+        Founder @ ARGUS · Cloud &amp; DevOps Engineer
       </p>
 
       {/* Description */}
       <p className="animate-fadeUp delay-3" style={{
         maxWidth: 640, fontSize: 17, color: 'var(--muted2)', lineHeight: 1.75, marginBottom: 48,
       }}>
-        Building <strong style={{ color: 'var(--text)' }}>ARGUS</strong> with Antonio —
-        a security and intelligence platform for Web3, shipping Protocol Guardian,
-        SolGuard, Mosaic, and an AI Venture Studio. Eight years architecting cloud
-        infrastructure on GCP, AWS, and OCI. Based in São Paulo.
+        Founder of <strong style={{ color: 'var(--text)' }}>ARGUS</strong> — a security
+        and intelligence platform for Web3, shipping Protocol Guardian (Ethereum),
+        SolGuard (Solana), Mosaic, and an AI Venture Studio. Eight years architecting
+        cloud infrastructure on GCP, AWS, and OCI. Based in São Paulo.
       </p>
 
       {/* CTAs */}

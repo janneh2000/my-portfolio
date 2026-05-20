@@ -4,9 +4,9 @@ const jobs = [
   {
     date: '2025 — Present',
     company: 'ARGUS',
-    title: 'Co-Founder · Engineering & Infrastructure',
-    desc: 'Co-founded ARGUS with Antonio — a security and intelligence platform for the Web3 / Solana ecosystem. Lead engineering across four shipping products: Protocol Guardian (DeFi protocol defense), SolGuard (Solana-native security toolkit), Mosaic (on-chain intelligence aggregator), and the ARGUS AI Venture Studio. Own infrastructure, observability, and the GCP footprint end-to-end, plus product engineering across the Solana + AI stack.',
-    tags: ['Solana', 'Rust', 'TypeScript', 'GCP', 'AI', 'Security', 'Founder'],
+    title: 'Founder · Engineering & Product',
+    desc: 'Founded ARGUS — a security and intelligence platform for Web3. Shipping four products in parallel: Protocol Guardian (Ethereum protocol defense), SolGuard (Solana-native security toolkit), Mosaic (on-chain intelligence aggregator), and the ARGUS AI Venture Studio. Own infrastructure, observability, and the GCP footprint end-to-end, plus product engineering across the EVM, Solana, and AI stack.',
+    tags: ['Ethereum', 'Solana', 'Rust', 'TypeScript', 'GCP', 'AI', 'Founder'],
   },
   {
     date: '2022 — 2024',
