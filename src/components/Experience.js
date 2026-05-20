@@ -46,7 +46,7 @@ export default function Experience() {
         <div style={{ position: 'absolute', left: 0, top: 0, bottom: 0, width: 1, background: 'linear-gradient(to bottom, var(--mint), transparent)' }} />
 
         {jobs.map((job, i) => (
-          <div key={i} style={{ paddingLeft: 40, paddingBottom: i < jobs.length - 1 ? 56 : 0, position: 'relative' }}>
+          <div key={i} className="experience-item" style={{ paddingLeft: 40, paddingBottom: i < jobs.length - 1 ? 56 : 0, position: 'relative' }}>
             {/* Dot */}
             <div style={{
               position: 'absolute', left: -5, top: 6,

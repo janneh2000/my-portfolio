@@ -19,7 +19,7 @@ export default function Certifications() {
         Credentials <br />that back it up.
       </h2>
 
-      <div style={{ display: 'grid', gridTemplateColumns: 'repeat(3, 1fr)', gap: 20 }}>
+      <div className="grid-3col" style={{ display: 'grid', gridTemplateColumns: 'repeat(3, 1fr)', gap: 20 }}>
         {certs.map((cert, i) => (
           <CertCard key={i} {...cert} />
         ))}
@@ -34,6 +34,7 @@ function CertCard({ icon, issuer, name, wip }) {
     <div
       onMouseEnter={() => setHovered(true)}
       onMouseLeave={() => setHovered(false)}
+      className="cert-card"
       style={{
         padding: 24, background: 'var(--surface)',
         border: `1px solid ${hovered ? 'rgba(0,229,160,0.2)' : 'var(--border)'}`,

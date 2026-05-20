@@ -16,7 +16,7 @@ export default function Contact() {
           If you're building something ambitious, let's talk.
         </p>
 
-        <div style={{ display: 'flex', justifyContent: 'center', gap: 16, flexWrap: 'wrap', marginBottom: 48 }}>
+        <div className="contact-links" style={{ display: 'flex', justifyContent: 'center', gap: 16, flexWrap: 'wrap', marginBottom: 48 }}>
           {[
             { href: 'https://www.linkedin.com/in/alie-janneh/', label: 'LinkedIn',  icon: 'in' },
             { href: 'https://github.com/janneh2000',            label: 'GitHub',    icon: '⌥' },

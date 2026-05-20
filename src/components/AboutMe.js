@@ -10,7 +10,7 @@ export default function AboutMe() {
         Founder. Engineer. <br />Builder at heart.
       </h2>
 
-      <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 80, alignItems: 'start' }}>
+      <div className="grid-about" style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 80, alignItems: 'start' }}>
         {/* Left: bio */}
         <div style={{ fontSize: 16, color: 'var(--muted2)', lineHeight: 1.8 }}>
           <p>I'm <strong style={{ color: 'var(--text)' }}>Alie Janneh</strong>, founder of <strong style={{ color: 'var(--text)' }}>ARGUS</strong> — a security and intelligence platform for Web3 — and a Cloud &amp; DevOps Engineer with <strong style={{ color: 'var(--text)' }}>8+ years</strong> shipping multi-cloud infrastructure that holds up in production.</p>

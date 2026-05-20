@@ -84,6 +84,7 @@ function AchievementCard({ year, tag, title, desc, accent }) {
     <div
       onMouseEnter={() => setHovered(true)}
       onMouseLeave={() => setHovered(false)}
+      className="achievement-card"
       style={{
         padding: 24, background: 'var(--surface)',
         border: `1px solid ${hovered ? 'rgba(0,229,160,0.25)' : 'var(--border)'}`,

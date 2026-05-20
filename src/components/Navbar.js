@@ -19,7 +19,7 @@ export default function Navbar() {
   const links = ['about', 'skills', 'experience', 'projects', 'achievements', 'certs', 'contact'];
 
   return (
-    <nav style={{
+    <nav className="nav-bar" style={{
       position: 'fixed', top: 0, left: 0, right: 0, zIndex: 100,
       display: 'flex', alignItems: 'center', justifyContent: 'space-between',
       padding: '20px 60px',
@@ -27,11 +27,11 @@ export default function Navbar() {
       backdropFilter: 'blur(20px)',
       borderBottom: '1px solid var(--border)',
     }}>
-      <div style={{ fontFamily: 'var(--mono)', fontSize: 13, color: 'var(--mint)', letterSpacing: '0.08em' }}>
+      <div className="nav-brand" style={{ fontFamily: 'var(--mono)', fontSize: 13, color: 'var(--mint)', letterSpacing: '0.08em' }}>
         <span style={{ color: 'var(--muted)' }}>~/ </span>alie.janneh
       </div>
 
-      <ul style={{ display: 'flex', gap: 28, listStyle: 'none' }}>
+      <ul className="nav-links" style={{ display: 'flex', gap: 28, listStyle: 'none' }}>
         {links.map(link => (
           <li key={link}>
             <a href={`#${link}`} style={{
@@ -46,10 +46,11 @@ export default function Navbar() {
         ))}
       </ul>
 
-      <a href="mailto:cjanneh@gmail.com" style={{
+      <a href="mailto:cjanneh@gmail.com" className="nav-cta" style={{
         fontFamily: 'var(--mono)', fontSize: 12, color: 'var(--mint)',
         border: '1px solid var(--mint)', padding: '8px 18px', borderRadius: 3,
         textDecoration: 'none', letterSpacing: '0.08em', transition: 'all 0.2s',
+        whiteSpace: 'nowrap',
       }}
         onMouseEnter={e => { e.target.style.background = 'var(--mint)'; e.target.style.color = 'var(--bg)'; }}
         onMouseLeave={e => { e.target.style.background = 'transparent'; e.target.style.color = 'var(--mint)'; }}

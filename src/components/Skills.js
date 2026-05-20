@@ -19,7 +19,7 @@ export default function Skills() {
         Tools I build <br />production with.
       </h2>
 
-      <div style={{ display: 'grid', gridTemplateColumns: 'repeat(3, 1fr)', gap: 24 }}>
+      <div className="grid-3col" style={{ display: 'grid', gridTemplateColumns: 'repeat(3, 1fr)', gap: 24 }}>
         {skillGroups.map(group => (
           <SkillCard key={group.title} {...group} />
         ))}
@@ -49,6 +49,7 @@ function SkillCard({ icon, title, tags }) {
     <div
       onMouseEnter={() => setHovered(true)}
       onMouseLeave={() => setHovered(false)}
+      className="skill-card"
       style={{
         padding: 28, background: 'var(--surface)',
         border: `1px solid ${hovered ? 'rgba(0,229,160,0.3)' : 'var(--border)'}`,

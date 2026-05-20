@@ -92,7 +92,7 @@ export default function Hero() {
       </div>
 
       {/* Stats */}
-      <div className="animate-fadeUp delay-5" style={{
+      <div className="animate-fadeUp delay-5 hero-stats" style={{
         display: 'flex', gap: 48, marginTop: 72,
         paddingTop: 40, borderTop: '1px solid var(--border)',
         flexWrap: 'wrap',

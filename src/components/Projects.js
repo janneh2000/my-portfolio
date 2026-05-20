@@ -101,7 +101,7 @@ export default function Projects() {
         Building <br />ARGUS.
       </h2>
 
-      <div style={{ display: 'grid', gridTemplateColumns: 'repeat(2, 1fr)', gap: 24 }}>
+      <div className="grid-2col" style={{ display: 'grid', gridTemplateColumns: 'repeat(2, 1fr)', gap: 24 }}>
         {projects.map((p, i) => (
           p.featured
             ? <FeaturedCard key={i} {...p} />
@@ -118,6 +118,7 @@ function FeaturedCard({ badge, title, desc, stack, link, metrics }) {
     <div
       onMouseEnter={() => setHovered(true)}
       onMouseLeave={() => setHovered(false)}
+      className="featured-card"
       style={{
         gridColumn: '1 / -1',
         display: 'flex', gap: 40, flexWrap: 'wrap',
@@ -128,7 +129,7 @@ function FeaturedCard({ badge, title, desc, stack, link, metrics }) {
         boxShadow: hovered ? '0 20px 40px rgba(0,0,0,0.4)' : 'none',
         transition: 'all 0.3s',
       }}>
-      <div style={{ flex: 1, minWidth: 280 }}>
+      <div className="featured-card-body" style={{ flex: 1, minWidth: 280 }}>
         <Badge {...badge} />
         <h3 style={{ fontFamily: 'var(--display)', fontWeight: 800, fontSize: 28, color: 'var(--text)', margin: '8px 0 12px', letterSpacing: '-0.01em' }}>{title}</h3>
         <p style={{ fontSize: 14, color: 'var(--muted2)', lineHeight: 1.7 }}>{desc}</p>
@@ -137,7 +138,7 @@ function FeaturedCard({ badge, title, desc, stack, link, metrics }) {
         </div>
         {link && <a href={link} target="_blank" rel="noreferrer" style={{ fontFamily: 'var(--mono)', fontSize: 12, color: 'var(--mint)', textDecoration: 'none', display: 'inline-flex', alignItems: 'center', gap: 6, marginTop: 16 }}>Visit ARGUS →</a>}
       </div>
-      <div style={{ display: 'flex', flexDirection: 'column', gap: 12, justifyContent: 'center', minWidth: 200 }}>
+      <div className="featured-card-metrics" style={{ display: 'flex', flexDirection: 'column', gap: 12, justifyContent: 'center', minWidth: 200 }}>
         {metrics.map(m => (
           <div key={m.label} style={{ padding: 16, background: 'var(--surface2)', border: '1px solid var(--border)', borderRadius: 6 }}>
             <div style={{ fontFamily: 'var(--display)', fontWeight: 800, fontSize: 28, color: 'var(--mint)' }}>{m.val}</div>
@@ -155,6 +156,7 @@ function ProjectCard({ badge, title, desc, stack, link }) {
     <div
       onMouseEnter={() => setHovered(true)}
       onMouseLeave={() => setHovered(false)}
+      className="project-card"
       style={{
         padding: 32, background: 'var(--surface)',
         border: `1px solid ${hovered ? 'rgba(0,229,160,0.25)' : 'var(--border)'}`,
