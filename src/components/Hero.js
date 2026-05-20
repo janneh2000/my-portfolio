@@ -34,7 +34,7 @@ export default function Hero() {
         marginBottom: 24, display: 'flex', alignItems: 'center', gap: 12,
       }}>
         <span style={{ width: 32, height: 1, background: 'var(--mint)', display: 'inline-block' }} />
-        DevOps · Cloud · Infrastructure
+        Co-Founder, ARGUS · Cloud · Solana · AI
       </div>
 
       {/* Name */}
@@ -51,16 +51,17 @@ export default function Hero() {
         fontFamily: 'var(--display)', fontWeight: 700,
         fontSize: 'clamp(20px, 3vw, 38px)', color: 'var(--muted)', marginBottom: 36,
       }}>
-        DevOps &amp; Cloud Engineer
+        Co-Founder @ ARGUS · Cloud &amp; DevOps Engineer
       </p>
 
       {/* Description */}
       <p className="animate-fadeUp delay-3" style={{
-        maxWidth: 560, fontSize: 17, color: 'var(--muted2)', lineHeight: 1.75, marginBottom: 48,
+        maxWidth: 640, fontSize: 17, color: 'var(--muted2)', lineHeight: 1.75, marginBottom: 48,
       }}>
-        Building resilient cloud infrastructure across GCP, AWS, and OCI —
-        automating pipelines, orchestrating containers, and shipping production-grade systems.
-        Based in São Paulo, open to the world.
+        Building <strong style={{ color: 'var(--text)' }}>ARGUS</strong> with Antonio —
+        a security and intelligence platform for Web3, shipping Protocol Guardian,
+        SolGuard, Mosaic, and an AI Venture Studio. Eight years architecting cloud
+        infrastructure on GCP, AWS, and OCI. Based in São Paulo.
       </p>
 
       {/* CTAs */}
@@ -75,7 +76,7 @@ export default function Hero() {
           onMouseEnter={e => { e.currentTarget.style.background = 'var(--mint-dim)'; e.currentTarget.style.transform = 'translateY(-2px)'; }}
           onMouseLeave={e => { e.currentTarget.style.background = 'var(--mint)'; e.currentTarget.style.transform = 'translateY(0)'; }}
         >
-          ↓ View My Work
+          ↓ See ARGUS
         </a>
         <a href="#contact" style={{
           border: '1px solid var(--border)', color: 'var(--muted2)',
@@ -97,10 +98,10 @@ export default function Hero() {
         flexWrap: 'wrap',
       }}>
         {[
-          { num: '4+', label: 'Years Experience' },
-          { num: '3',  label: 'Cloud Platforms' },
-          { num: '6+', label: 'Projects Shipped' },
-          { num: '4',  label: 'Certifications' },
+          { num: '8+',  label: 'Years Experience' },
+          { num: '4',   label: 'ARGUS Products' },
+          { num: '3',   label: 'Cloud Platforms' },
+          { num: '5',   label: 'Certifications' },
         ].map(s => (
           <div key={s.label}>
             <div style={{ fontFamily: 'var(--display)', fontSize: 36, fontWeight: 800, color: 'var(--mint)' }}>{s.num}</div>

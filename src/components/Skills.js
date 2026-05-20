@@ -1,19 +1,19 @@
 import React from 'react';
 
 const skillGroups = [
-  { icon: '☁️', title: 'Cloud Platforms',           tags: ['GCP', 'AWS', 'OCI', 'Cloud Run', 'GKE', 'EKS', 'Cloud Functions'] },
+  { icon: '☁️', title: 'Cloud Platforms',           tags: ['GCP', 'AWS', 'OCI', 'Cloud Run', 'GKE', 'EKS', 'Cloud Functions', 'BigQuery'] },
   { icon: '⚙️', title: 'Infrastructure as Code',    tags: ['Terraform', 'Helm', 'Ansible', 'Pulumi', 'CloudFormation'] },
   { icon: '🐳', title: 'Containers & Orchestration', tags: ['Kubernetes', 'Docker', 'Docker Compose', 'ArgoCD', 'Istio'] },
-  { icon: '📊', title: 'Observability',              tags: ['Prometheus', 'Grafana', 'Alertmanager', 'Loki', 'Cloud Monitoring'] },
-  { icon: '🔁', title: 'CI/CD & Version Control',   tags: ['GitHub Actions', 'GitLab CI', 'Jenkins', 'Git', 'ArgoCD'] },
-  { icon: '🐍', title: 'Languages & Data',           tags: ['Python', 'Bash', 'SQL', 'BigQuery', 'Rust (learning)', 'JavaScript'] },
+  { icon: '📊', title: 'Observability & SRE',        tags: ['Prometheus', 'Grafana', 'Loki', 'Alertmanager', 'Cloud Monitoring', 'SLO/SLI'] },
+  { icon: '🔁', title: 'CI/CD & Version Control',   tags: ['GitHub Actions', 'GitLab CI', 'Cloud Build', 'Jenkins', 'Git', 'ArgoCD'] },
+  { icon: '🐍', title: 'Languages & Data',           tags: ['Python', 'TypeScript', 'Bash', 'SQL', 'BigQuery', 'Rust', 'JavaScript'] },
 ];
 
 export default function Skills() {
   return (
     <section id="skills" style={{ padding: '100px 60px', background: 'var(--bg)' }}>
       <div style={{ fontFamily: 'var(--mono)', fontSize: 11, color: 'var(--mint)', letterSpacing: '0.2em', textTransform: 'uppercase', marginBottom: 16, display: 'flex', alignItems: 'center', gap: 10 }}>
-         {'// '} {'// '} Technical Stack
+         {'// '} Technical Stack
       </div>
       <h2 style={{ fontFamily: 'var(--display)', fontWeight: 800, fontSize: 'clamp(32px, 4vw, 54px)', lineHeight: 1.05, letterSpacing: '-0.02em', marginBottom: 60 }}>
         Tools I build <br />production with.
@@ -31,9 +31,9 @@ export default function Skills() {
           border: '1px solid var(--border)', borderRadius: 8,
         }}>
           <div style={{ fontSize: 28, marginBottom: 16 }}>⛓️</div>
-          <div style={{ fontFamily: 'var(--mono)', fontSize: 13, color: 'var(--mint)', letterSpacing: '0.08em', marginBottom: 16 }}>Web3 & Blockchain (New Frontier)</div>
+          <div style={{ fontFamily: 'var(--mono)', fontSize: 13, color: 'var(--mint)', letterSpacing: '0.08em', marginBottom: 16 }}>Web3 &amp; Blockchain Infrastructure</div>
           <div style={{ display: 'flex', flexWrap: 'wrap', gap: 6 }}>
-            {['Solana', 'Anchor Framework', 'Drift Protocol', 'Helius RPC', 'DeFi Infrastructure', 'SPL Tokens', 'On-chain Programs'].map(tag => (
+            {['Solana', 'Anchor Framework', 'Drift Protocol', 'Helius RPC', 'DeFi Infrastructure', 'SPL Tokens', 'On-chain Programs', 'Polymarket', 'Polygon'].map(tag => (
               <Tag key={tag}>{tag}</Tag>
             ))}
           </div>

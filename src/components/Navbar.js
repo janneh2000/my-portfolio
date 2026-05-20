@@ -16,7 +16,7 @@ export default function Navbar() {
     return () => window.removeEventListener('scroll', onScroll);
   }, []);
 
-  const links = ['about', 'skills', 'experience', 'projects', 'certs', 'contact'];
+  const links = ['about', 'skills', 'experience', 'projects', 'achievements', 'certs', 'contact'];
 
   return (
     <nav style={{
@@ -28,10 +28,10 @@ export default function Navbar() {
       borderBottom: '1px solid var(--border)',
     }}>
       <div style={{ fontFamily: 'var(--mono)', fontSize: 13, color: 'var(--mint)', letterSpacing: '0.08em' }}>
-        <span style={{ color: 'var(--muted)' }}>~/ </span>rivaldo.dev
+        <span style={{ color: 'var(--muted)' }}>~/ </span>alie.janneh
       </div>
 
-      <ul style={{ display: 'flex', gap: 36, listStyle: 'none' }}>
+      <ul style={{ display: 'flex', gap: 28, listStyle: 'none' }}>
         {links.map(link => (
           <li key={link}>
             <a href={`#${link}`} style={{

@@ -11,15 +11,16 @@ export default function Contact() {
           Let's build <br />something real.
         </h2>
         <p style={{ fontSize: 17, color: 'var(--muted2)', lineHeight: 1.75, marginBottom: 48 }}>
-          I'm actively looking for DevOps and Cloud Engineer roles — remote or on-site in
-          the US, UK, Portugal, or Malta. If you're building something ambitious, let's talk.
+          Actively pursuing SRE / Cloud Engineer roles — São Paulo (Google &amp; tier-one tech),
+          remote-first globally, and select on-site teams in the US, UK, and Portugal.
+          If you're building something ambitious, let's talk.
         </p>
 
         <div style={{ display: 'flex', justifyContent: 'center', gap: 16, flexWrap: 'wrap', marginBottom: 48 }}>
           {[
             { href: 'https://www.linkedin.com/in/alie-janneh/', label: 'LinkedIn',  icon: 'in' },
             { href: 'https://github.com/janneh2000',            label: 'GitHub',    icon: '⌥' },
-            { href: 'https://x.com/cjanneh2000',               label: 'Twitter/X', icon: '𝕏' },
+            { href: 'https://x.com/cjanneh2000',                label: 'Twitter/X', icon: '𝕏' },
           ].map(link => (
             <ContactLink key={link.label} {...link} />
           ))}

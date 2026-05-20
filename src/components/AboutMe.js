@@ -4,28 +4,29 @@ export default function AboutMe() {
   return (
     <section id="about" style={{ padding: '100px 60px', background: 'var(--bg2)' }}>
       <div style={{ fontFamily: 'var(--mono)', fontSize: 11, color: 'var(--mint)', letterSpacing: '0.2em', textTransform: 'uppercase', marginBottom: 16, display: 'flex', alignItems: 'center', gap: 10 }}>
-         {'// '} {'// '} About Me
+         {'// '} About Me
       </div>
       <h2 style={{ fontFamily: 'var(--display)', fontWeight: 800, fontSize: 'clamp(32px, 4vw, 54px)', lineHeight: 1.05, letterSpacing: '-0.02em', marginBottom: 60 }}>
-        Infrastructure <br />at scale, by design.
+        Founder. Engineer. <br />Builder at heart.
       </h2>
 
       <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 80, alignItems: 'start' }}>
         {/* Left: bio */}
         <div style={{ fontSize: 16, color: 'var(--muted2)', lineHeight: 1.8 }}>
-          <p>I'm <strong style={{ color: 'var(--text)' }}>Alie Janneh</strong>, a DevOps and Cloud Engineer with 4+ years of experience architecting multi-cloud environments, automating deployments, and building data pipelines that actually hold up in production.</p>
-          <p style={{ marginTop: 20 }}>I've worked across <strong style={{ color: 'var(--text)' }}>GCP, AWS, and OCI</strong>, shipping automation with Python and Terraform, orchestrating workloads on Kubernetes, and more recently extending into <strong style={{ color: 'var(--text)' }}>Web3 infrastructure</strong> — building on Solana and participating in DeFi protocol hackathons.</p>
-          <p style={{ marginTop: 20 }}>Previously at <strong style={{ color: 'var(--text)' }}>Foxconn</strong> and <strong style={{ color: 'var(--text)' }}>Banco BV</strong>, I built and maintained cloud automation at scale. I care deeply about observability, security hardening, and CI/CD pipelines that don't break at 2am.</p>
-          <p style={{ marginTop: 20 }}>Currently seeking <strong style={{ color: 'var(--text)' }}>DevOps / Cloud Engineer</strong> roles globally — with a strong interest in the US, UK, Portugal, and Malta.</p>
+          <p>I'm <strong style={{ color: 'var(--text)' }}>Alie Janneh</strong>, co-founder of <strong style={{ color: 'var(--text)' }}>ARGUS</strong> — a security and intelligence platform for the Web3 / Solana ecosystem — and a Cloud &amp; DevOps Engineer with <strong style={{ color: 'var(--text)' }}>8+ years</strong> shipping multi-cloud infrastructure that holds up in production.</p>
+          <p style={{ marginTop: 20 }}>At ARGUS, Antonio and I are shipping four products in parallel: <strong style={{ color: 'var(--text)' }}>Protocol Guardian</strong>, <strong style={{ color: 'var(--text)' }}>SolGuard</strong>, <strong style={{ color: 'var(--text)' }}>Mosaic</strong>, and an <strong style={{ color: 'var(--text)' }}>AI Venture Studio</strong>. It's the kind of build velocity I always wanted to operate at, applied to a problem space — Web3 security &amp; on-chain intel — that's both early and consequential.</p>
+          <p style={{ marginTop: 20 }}>Before ARGUS, I ran cloud infrastructure on <strong style={{ color: 'var(--text)' }}>GCP, AWS, and OCI</strong> at <strong style={{ color: 'var(--text)' }}>Banco BV</strong> and <strong style={{ color: 'var(--text)' }}>Foxconn</strong> — automating with Python and Terraform, orchestrating on Kubernetes, and shipping pipelines that don't break at 2am.</p>
+          <p style={{ marginTop: 20 }}>Based in São Paulo. Open to senior <strong style={{ color: 'var(--text)' }}>SRE / Cloud / Customer Engineer</strong> roles at companies serious about reliability — Google São Paulo first on the list.</p>
         </div>
 
         {/* Right: info cards */}
         <div style={{ display: 'flex', flexDirection: 'column', gap: 24 }}>
           {[
+            { icon: '🏢', label: 'Currently', val: 'Co-Founder @ ARGUS' },
             { icon: '📍', label: 'Location', val: 'São Paulo, Brazil' },
             { icon: '🌐', label: 'Languages', val: 'Portuguese (native) · English (fluent)' },
             { icon: '🎓', label: 'Top Certification', val: 'Google Cloud Professional Cloud Architect' },
-            { icon: '📡', label: 'Focus Areas', val: 'Cloud Infra · DevOps · Web3 · Data Engineering' },
+            { icon: '📡', label: 'Focus Areas', val: 'Web3 Security · Cloud · SRE · AI' },
           ].map(item => (
             <div key={item.label} style={{
               display: 'flex', alignItems: 'center', gap: 14,
@@ -46,7 +47,7 @@ export default function AboutMe() {
           }}>
             <div style={{ fontFamily: 'var(--mono)', fontSize: 11, color: 'var(--mint)', letterSpacing: '0.1em', textTransform: 'uppercase', marginBottom: 10 }}>🌍 Open to opportunities in</div>
             <div style={{ display: 'flex', flexWrap: 'wrap', gap: 8 }}>
-              {['🇺🇸 United States', '🇬🇧 United Kingdom', '🇵🇹 Portugal', '🇲🇹 Malta', 'Remote-First'].map(tag => (
+              {['🇧🇷 São Paulo', '🇺🇸 United States', '🇬🇧 United Kingdom', '🇵🇹 Portugal', 'Remote-First'].map(tag => (
                 <span key={tag} style={{
                   fontFamily: 'var(--mono)', fontSize: 11, color: 'var(--mint)',
                   border: '1px solid rgba(0,229,160,0.3)', padding: '4px 10px',

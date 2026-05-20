@@ -2,25 +2,32 @@ import React from 'react';
 
 const jobs = [
   {
-    date: '2023 — Present',
-    company: 'Independent / Freelance',
-    title: 'DevOps Engineer & Cloud Architect',
-    desc: 'Building and shipping multi-cloud infrastructure projects, DevOps monitoring stacks, and exploring Web3 development on Solana. Participating in DeFi hackathons, contributing to open-source programs, and continuously expanding cloud architecture expertise.',
-    tags: ['GCP', 'AWS', 'Solana', 'Terraform', 'Kubernetes', 'Python'],
+    date: '2025 — Present',
+    company: 'ARGUS',
+    title: 'Co-Founder · Engineering & Infrastructure',
+    desc: 'Co-founded ARGUS with Antonio — a security and intelligence platform for the Web3 / Solana ecosystem. Lead engineering across four shipping products: Protocol Guardian (DeFi protocol defense), SolGuard (Solana-native security toolkit), Mosaic (on-chain intelligence aggregator), and the ARGUS AI Venture Studio. Own infrastructure, observability, and the GCP footprint end-to-end, plus product engineering across the Solana + AI stack.',
+    tags: ['Solana', 'Rust', 'TypeScript', 'GCP', 'AI', 'Security', 'Founder'],
   },
   {
-    date: '2022 — 2023',
+    date: '2022 — 2024',
     company: 'Banco BV',
     title: 'Cloud Engineer — Google Cloud',
-    desc: "Engineered Python-based automation workflows and Google Cloud infrastructure for one of Brazil's leading financial institutions. Worked on data pipelines, cloud resource provisioning, and internal tooling on GCP — delivering reliable, scalable solutions in a regulated banking environment.",
-    tags: ['GCP', 'Python', 'BigQuery', 'Cloud Functions', 'Data Pipelines'],
+    desc: "Engineered Python-based automation workflows and Google Cloud infrastructure for one of Brazil's leading financial institutions. Owned BigQuery data pipelines, Composer-orchestrated workflows, and Terraform-driven GCP provisioning. Delivered reliable, scalable solutions inside a strict regulated banking environment.",
+    tags: ['GCP', 'Python', 'BigQuery', 'Cloud Functions', 'Composer', 'Terraform'],
   },
   {
-    date: '2021 — 2022',
+    date: '2020 — 2022',
     company: 'Foxconn',
     title: 'DevOps Engineer',
-    desc: 'Managed Kubernetes-based container orchestration and Python automation for manufacturing-scale operations at Foxconn. Contributed to infrastructure reliability, deployment pipelines, and internal platform tooling in a high-throughput production environment.',
-    tags: ['Kubernetes', 'Python', 'Docker', 'CI/CD', 'Linux'],
+    desc: 'Managed Kubernetes-based container orchestration and Python automation for manufacturing-scale operations. Hardened deployment pipelines, instrumented monitoring across plants, and contributed to internal platform tooling in a high-throughput production environment.',
+    tags: ['Kubernetes', 'Python', 'Docker', 'CI/CD', 'Linux', 'Bash'],
+  },
+  {
+    date: '2018 — 2020',
+    company: 'Early Career',
+    title: 'Systems / Infrastructure Engineer',
+    desc: 'Built foundational expertise in Linux administration, networking, virtualization, and on-prem-to-cloud migrations. Wrote Bash and Python automation that replaced manual operations work and supported infrastructure operations across internal systems.',
+    tags: ['Linux', 'Networking', 'Bash', 'Virtualization', 'On-Prem → Cloud'],
   },
 ];
 
@@ -28,7 +35,7 @@ export default function Experience() {
   return (
     <section id="experience" style={{ padding: '100px 60px', background: 'var(--bg2)' }}>
       <div style={{ fontFamily: 'var(--mono)', fontSize: 11, color: 'var(--mint)', letterSpacing: '0.2em', textTransform: 'uppercase', marginBottom: 16, display: 'flex', alignItems: 'center', gap: 10 }}>
-         {'// '} {'// '} Work Experience
+         {'// '} Work Experience
       </div>
       <h2 style={{ fontFamily: 'var(--display)', fontWeight: 800, fontSize: 'clamp(32px, 4vw, 54px)', lineHeight: 1.05, letterSpacing: '-0.02em', marginBottom: 60 }}>
         Where I've <br />built things.
@@ -53,7 +60,7 @@ export default function Experience() {
               <span style={{ fontFamily: 'var(--mono)', fontSize: 11, color: 'var(--muted)', padding: '2px 8px', border: '1px solid var(--border)', borderRadius: 3 }}>{job.company}</span>
             </div>
             <h3 style={{ fontFamily: 'var(--display)', fontWeight: 700, fontSize: 22, color: 'var(--text)', marginBottom: 12 }}>{job.title}</h3>
-            <p style={{ fontSize: 15, color: 'var(--muted2)', lineHeight: 1.75, maxWidth: 680 }}>{job.desc}</p>
+            <p style={{ fontSize: 15, color: 'var(--muted2)', lineHeight: 1.75, maxWidth: 720 }}>{job.desc}</p>
             <div style={{ display: 'flex', flexWrap: 'wrap', gap: 6, marginTop: 14 }}>
               {job.tags.map(tag => (
                 <span key={tag} style={{

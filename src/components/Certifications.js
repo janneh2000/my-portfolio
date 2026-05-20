@@ -2,9 +2,9 @@ import React from 'react';
 
 const certs = [
   { icon: '🏆', issuer: 'Google Cloud',           name: 'Professional Cloud Architect' },
-  { icon: '☁️', issuer: 'The Cloud Bootcamp',      name: 'AWS Cloud Practitioner' },
-  { icon: '🔷', issuer: 'The Cloud Bootcamp',      name: 'Microsoft Azure Fundamentals' },
-  { icon: '🌐', issuer: 'The Cloud Bootcamp',      name: 'Oracle Cloud Infrastructure (OCI)' },
+  { icon: '☁️', issuer: 'AWS',                    name: 'Cloud Practitioner' },
+  { icon: '🔷', issuer: 'Microsoft',              name: 'Azure Fundamentals (AZ-900)' },
+  { icon: '🌐', issuer: 'Oracle',                 name: 'Oracle Cloud Infrastructure (OCI) Foundations' },
   { icon: '📡', issuer: 'Cisco Networking Academy', name: 'Network Fundamentals & Infrastructure' },
   { icon: '🎯', issuer: 'In Progress',              name: 'CKA — Certified Kubernetes Administrator', wip: true },
 ];
@@ -13,7 +13,7 @@ export default function Certifications() {
   return (
     <section id="certs" style={{ padding: '100px 60px', background: 'var(--bg2)' }}>
       <div style={{ fontFamily: 'var(--mono)', fontSize: 11, color: 'var(--mint)', letterSpacing: '0.2em', textTransform: 'uppercase', marginBottom: 16, display: 'flex', alignItems: 'center', gap: 10 }}>
-         {'// '} {'// '} Certifications
+         {'// '} Certifications
       </div>
       <h2 style={{ fontFamily: 'var(--display)', fontWeight: 800, fontSize: 'clamp(32px, 4vw, 54px)', lineHeight: 1.05, letterSpacing: '-0.02em', marginBottom: 60 }}>
         Credentials <br />that back it up.
